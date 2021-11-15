@@ -1,12 +1,12 @@
 function func1(array) {
 
-	for(let i = 0; i < array.length; i++) {
-		let obj = array[i];
-		let objArr = Object.values(obj);
-		for(let j = 0; j < objArr.length; j++) {
-			console.log(`Имя: ${objArr[0]}, взраст: ${objArr[1]}`);
-		}
+	let arr = []
+
+	for (let i = 0; i < array.length; i++) {
+		arr.push(`Имя: ${array[i].name}, возвраст: ${array[i].age}`)
 	}
+
+	return arr
 
 }
 
